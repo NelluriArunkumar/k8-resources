@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environmental-variables
+  labels:
+    purpose: demonstrate-envars
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: COURSE
+      value: "KUBERNETES"
+    - name: Trainer
+      value: "SIVAKUMAR"
