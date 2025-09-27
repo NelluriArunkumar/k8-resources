@@ -11,3 +11,17 @@ spec:
     driver: ebs.csi.aws.com
     fsType: ext4
     volumeHandle: vol-0c6c64b8d3e462a6d
+---
+
+apiVersion: v1
+kind: PersistantVolumeClaim
+metadata:
+  name: ebs-static
+spec:
+  storageClassName: "" #Must be empty for default value
+  volumeName: ebs-static
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 15Gi
