@@ -31,7 +31,7 @@ spec:
     project: roboshop
 ---
 
-apiVersion: v1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: nginx-statefulset
