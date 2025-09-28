@@ -16,7 +16,7 @@ spec:
 ---
 
 apiVersion: v1
-kind: Pod
+kind: Service
 metadata:
   name: nginx-svc-normal
   labels:
